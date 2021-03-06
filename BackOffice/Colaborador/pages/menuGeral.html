@@ -1,0 +1,105 @@
+
+		
+	<div>
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#">
+					<em class="fa fa-home"></em>
+				</a></li>
+				<li class="active">Valores</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Valores dos Nossos Colaboradores</h1>
+			</div>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h1>Dedicação</h1>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h1>Amor à causa</h1>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h1>Companheirismo</h1>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h1>Solidariedade</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div><!--/.row-->
+		
+	
+	  
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script>
+	window.onload = function () {
+	var chart1 = document.getElementById("line-chart").getContext("2d");
+	window.myLine = new Chart(chart1).Line(lineChartData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	scaleGridLineColor: "rgba(0,0,0,.05)",
+	scaleFontColor: "#c5c7cc"
+	});
+	var chart2 = document.getElementById("bar-chart").getContext("2d");
+	window.myBar = new Chart(chart2).Bar(barChartData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	scaleGridLineColor: "rgba(0,0,0,.05)",
+	scaleFontColor: "#c5c7cc"
+	});
+	var chart3 = document.getElementById("doughnut-chart").getContext("2d");
+	window.myDoughnut = new Chart(chart3).Doughnut(doughnutData, {
+	responsive: true,
+	segmentShowStroke: false
+	});
+	var chart4 = document.getElementById("pie-chart").getContext("2d");
+	window.myPie = new Chart(chart4).Pie(pieData, {
+	responsive: true,
+	segmentShowStroke: false
+	});
+	var chart5 = document.getElementById("radar-chart").getContext("2d");
+	window.myRadarChart = new Chart(chart5).Radar(radarData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.05)",
+	angleLineColor: "rgba(0,0,0,.2)"
+	});
+	var chart6 = document.getElementById("polar-area-chart").getContext("2d");
+	window.myPolarAreaChart = new Chart(chart6).PolarArea(polarData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	segmentShowStroke: false
+	});
+};
+	</script>	
+		<script>
+		window.onload = function() {
+			var chart1 = document.getElementById("line-chart").getContext("2d");
+			window.myLine = new Chart(chart1).Line(lineChartData, {
+				responsive: true,
+				scaleLineColor: "rgba(0,0,0,.2)",
+				scaleGridLineColor: "rgba(0,0,0,.05)",
+				scaleFontColor: "#c5c7cc"
+			});
+		};
+	</script>

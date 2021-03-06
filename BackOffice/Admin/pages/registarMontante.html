@@ -1,0 +1,48 @@
+<div class="row">
+	<ol class="breadcrumb">
+		<li><a href="#">
+					<em class="fa fa-money"></em>
+				</a></li>
+		<li class="active">Doação</li>
+	</ol>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+		<h1 class="page-header">Doação</h1>
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">Registar Doação</div>
+	<div class="panel-body">
+		<div class="col-md-6">
+			<form id="registardoacao" method="post" html="{:multipart=>true}" data-remote="true" accept-charset="UTF-8" action="">
+				<div class="form-group">
+					<input  type="hidden" id="id10" class="form-control">
+					<label for="email">Email</label>
+					<input type="email" id="emailregister" class="form-control" data-rule="required|email">
+				</div>
+				<div class="form-group">
+					<label for="montante">Montante</label>
+					<input type="number" id="montanteregister" class="form-control" data-rule="required|number">
+				</div>
+				<div class="form-group">
+					<label for="data">Data</label>
+					<input type="date" id="dataregister" class="form-control" data-rule="required|date">
+				</div>
+				<div>
+					<button type="submit" class="btn btn-primary">Registar Doação</button>
+					<button type="reset" class="btn btn-default">Limpar Dados</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">Doações Registadas</div>
+<div class="panel-body">
+	<div class="col-md-12">
+		<div id="result3">
+		</div>
+	</div>
+</div>
+</div>
